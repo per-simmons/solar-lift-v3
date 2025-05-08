@@ -1866,6 +1866,14 @@ footer {
     padding-left: 0;
 }
 
+@media (max-width: 768px) {
+    .view-all-container {
+        margin-top: 120px; /* Increase top margin on mobile to position below metrics cards */
+        justify-content: center; /* Center the button on mobile */
+        padding-bottom: 40px; /* Add some bottom padding for spacing */
+    }
+}
+
 .view-all-button {
     display: flex;
     align-items: center;
