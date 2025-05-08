@@ -1,7 +1,7 @@
 /* Reset and fix case studies carousel */
 .case-studies-section {
     padding: 80px 0;
-    background-color: #f8f9fa;
+    /* Removed background-color to match the rest of the website */
     overflow: hidden; /* Prevent horizontal scrollbar */
     width: 100%;
   }
@@ -277,16 +277,18 @@ dd {
     gap: 8px;
     padding: 16px 24px;
     background-color: #F9FAFB;
-    border-radius: 100px;
+    border-radius: 8px; /* Less rounded corners */
     font-weight: 500;
     color: var(--gray-1100);
     transition: all 0.2s ease;
     font-size: 16px;
     line-height: 1.5;
+    border: 1px solid rgba(0, 0, 0, 0.05);
   }
   
   .view-all-button:hover {
-    background-color: white;
+    background-color: #ffcd00; /* Yellow background on hover */
+    color: white !important; /* White text on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
   }
   
