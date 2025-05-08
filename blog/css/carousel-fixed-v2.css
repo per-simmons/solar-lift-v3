@@ -1,0 +1,328 @@
+/* Reset and fix case studies carousel */
+.case-studies-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    overflow: hidden; /* Prevent horizontal scrollbar */
+    width: 100%;
+  }
+  
+  .case-studies-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+    padding: 0 15px;
+    overflow: visible; /* Only visible on the container */
+    position: relative;
+  }
+  
+  /* Section header styling */
+  .case-studies-section .section-header {
+    margin-bottom: 48px;
+    position: relative; /* Add position relative for arrow positioning */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .case-studies-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .case-studies-section .subheadline {
+    font-size: 1.1rem;
+    color: #666;
+    text-align: left;
+    max-width: 800px;
+  }
+  
+  /* Splide carousel container */
+  .case-studies-splide {
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  /* Fix for track and list visibility */
+  .splide__track {
+    overflow: visible !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .splide__list {
+    overflow: visible !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    gap: 20px !important; /* Add controlled gap between slides */
+  }
+  
+  /* Slide styling */
+  .splide__slide {
+    margin-right: 0 !important; /* Completely removed margin */
+    opacity: 1;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 820px; /* Control the total width of each slide */
+  }
+  
+  /* First slide alignment */
+  .splide__slide:first-child {
+    margin-left: 0 !important;
+  }
+  
+  /* Fix article layout */
+  .splide__slide article {
+    display: flex !important;
+    gap: 8px !important; /* Reduced gap between cards within each slide */
+    height: 100% !important;
+  }
+  
+  /* Main card styles */
+  .splide__slide article > div:first-child {
+    width: 580px !important; /* Adjusted width - not too compressed */
+    flex-shrink: 0 !important;
+    background-color: white;
+    border-radius: 24px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-right: 0 !important; /* Ensure no right margin */
+  }
+  
+  /* Metrics column styles */
+  .splide__slide article > dl {
+    width: 220px !important; /* Adjusted from 200px */
+    flex-shrink: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 100%;
+    margin-right: 0 !important; /* Ensure no right margin */
+  }
+  
+  .splide__slide article > dl > div {
+    background-color: white;
+    border-radius: 24px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: left;
+  }
+  
+  /* Card header styling */
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+  }
+  
+  .client-logo {
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  
+  .tag {
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    background-color: transparent;
+    color: #666;
+    border: 1px solid #d0d0d0;
+  }
+  
+  .tag.residential {
+    background-color: transparent;
+    color: #0369a1;
+    border-color: #0369a1;
+  }
+  
+  .tag.commercial {
+    background-color: transparent;
+    color: #166534;
+    border-color: #166534;
+  }
+  
+  /* Reset browser default for dd elements */
+dd {
+  margin-left: 0 !important;
+}
+
+/* Stat numbers styling */
+.splide__slide article > dl > div dd.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFB800;
+    letter-spacing: -0.01em;
+    margin-top: 8px;
+    text-align: left;
+    width: 100%;
+    display: block;
+    margin-left: 0;
+  }
+  
+  dl dt {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.4;
+    text-align: left;
+    width: 100%;
+    display: block;
+    font-weight: 600;
+  }
+  
+  dl dd {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.4;
+    text-align: left;
+    width: 100%;
+    display: block;
+    margin-bottom: 12px;
+  }
+  
+  /* CTA link styling */
+  .case-study-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: var(--text-color);
+    transition: color 0.2s ease;
+    font-size: 0.9rem;
+    margin-top: auto;
+  }
+  
+  .arrow-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    transition: all 0.2s ease;
+  }
+  
+  .case-study-cta:hover {
+    color: var(--accent-color);
+  }
+  
+  .case-study-cta:hover .arrow-circle {
+    background-color: var(--accent-color);
+    color: white;
+  }
+  
+  /* Navigation arrows styling */
+  .splide__arrows.custom-arrows {
+    position: absolute;
+    top: 30px; /* Move down to align with the section header */
+    right: 0;
+    display: flex;
+    gap: 60px; /* Significantly increase the gap to prevent overlapping */
+    z-index: 10;
+  }
+  
+  .splide__arrow {
+    position: relative;
+    width: 48px; /* Slightly smaller than current */
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba(249, 250, 251, 0.8); /* Slightly transparent */
+    border: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #666;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    opacity: 1;
+    transform: none;
+  }
+  
+  .splide__arrow svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    transform: none;
+  }
+  
+  .splide__arrow:hover {
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* View all button styling */
+  .view-all-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+  }
+  
+  .view-all-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 24px;
+    background-color: #F9FAFB;
+    border-radius: 100px;
+    font-weight: 500;
+    color: var(--gray-1100);
+    transition: all 0.2s ease;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .view-all-button:hover {
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Mobile responsive adjustments */
+  @media (max-width: 992px) {
+    .splide__slide {
+      margin-right: 24px !important;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .splide__slide article {
+      flex-direction: column !important;
+    }
+    
+    .splide__slide article > div:first-child,
+    .splide__slide article > dl {
+      width: 100% !important;
+    }
+    
+    .splide__slide article > dl {
+      flex-direction: row !important;
+      flex-wrap: wrap;
+    }
+    
+    .splide__slide article > dl > div {
+      flex: 1;
+      min-width: calc(50% - 6px);
+    }
+    
+    .splide__arrows.custom-arrows {
+      top: -60px;
+    }
+    
+    .splide__arrow {
+      width: 48px;
+      height: 48px;
+    }
+  }
