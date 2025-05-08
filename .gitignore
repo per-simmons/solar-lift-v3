@@ -25,7 +25,6 @@ Thumbs.db
 *.swp
 *.swo
 
-# Temporarily exclude blog and assets for initial push
+# Temporarily exclude blog for initial push
 blog/
-assets/
-package-lock.json
+# package-lock.json
