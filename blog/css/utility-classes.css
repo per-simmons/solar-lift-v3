@@ -1,0 +1,209 @@
+/* Utility Classes for Case Studies Carousel */
+
+/* Flexbox utilities */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+/* Gap utilities */
+.gap-12 {
+    gap: 12px;
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
+.gap-24 {
+    gap: 24px;
+}
+
+.gap-64 {
+    gap: 64px;
+}
+
+/* Dimension utilities */
+.h-full {
+    height: 100%;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-56 {
+    height: 56px;
+}
+
+.w-56 {
+    width: 56px;
+}
+
+.shrink-0 {
+    flex-shrink: 0;
+}
+
+/* Width utilities */
+.w-\[656px\] {
+    width: 656px;
+}
+
+.w-\[256px\] {
+    width: 256px;
+}
+
+/* Spacing utilities */
+.p-16 {
+    padding: 16px;
+}
+
+.p-24 {
+    padding: 24px;
+}
+
+.py-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.py-16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.px-24 {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+/* Border utilities */
+.rounded-24 {
+    border-radius: 24px;
+}
+
+.rounded-100 {
+    border-radius: 100px;
+}
+
+.border-1 {
+    border-width: 1px;
+}
+
+.border-white {
+    border-color: white;
+}
+
+/* Background utilities */
+.bg-white {
+    background-color: white;
+}
+
+.bg-gray-50 {
+    background-color: #F9FAFB;
+}
+
+/* Text color utilities */
+.text-gray-1100 {
+    color: var(--gray-1100);
+}
+
+.text-gray-1200 {
+    color: var(--gray-1200);
+}
+
+/* Typography utilities */
+.heading-3xl {
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.body-lg-regular {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/* Shadow utilities */
+.shadow-card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+}
+
+.hover\:shadow-16:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Overflow utilities */
+.\!overflow-visible {
+    overflow: visible !important;
+}
+
+.\!h-full {
+    height: 100% !important;
+}
+
+/* Mobile utilities */
+@media (max-width: 768px) {
+    .mobile\:flex-col {
+        flex-direction: column;
+    }
+    
+    .mobile\:flex-row {
+        flex-direction: row;
+    }
+    
+    .mobile\:w-full {
+        width: 100%;
+    }
+    
+    .mobile\:h-full {
+        height: 100%;
+    }
+    
+    .mobile\:h-auto {
+        height: auto;
+    }
+    
+    .mobile\:w-\[328px\] {
+        width: 328px;
+    }
+    
+    .mobile\:p-0 {
+        padding: 0;
+    }
+    
+    .mobile\:gap-16 {
+        gap: 16px;
+    }
+}
+
+/* === Clamp case-study titles to 4 lines === */
+.case-study-card h3,
+.case-study-card .heading-lg-medium {
+  display: -webkit-box;         /* enable multi‑line clamp */
+  -webkit-box-orient: vertical; /* stack lines vertically */
+  -webkit-line-clamp: 4;        /* limit to 4 lines */
+  line-clamp: 4;                /* standard property for compatibility */
+  overflow: hidden;             /* hide overflow text */
+  line-height: 1.25;            /* tighten line spacing */
+}
