@@ -25,3 +25,20 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
+
+# Large files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.mp4
+*.mov
+*.webm
+*.pdf
+*.zip
+*.rar
+*.tar.gz
+*.otf
+*.ttf
+*.woff
+*.woff2
