@@ -24,3 +24,8 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
+
+# Temporarily exclude blog and assets for initial push
+blog/
+assets/
+package-lock.json
